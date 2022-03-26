@@ -12,6 +12,10 @@
 	// since there's no dynamic data here, we can prerender
 	// it so that it gets served as a static asset in prod
 	export const prerender = true;
+
+	let name = 'Amna';
+
+let object = {title:"i am Amna", heartrate:"82bps"}
 </script>
 
 <svelte:head>
@@ -22,6 +26,9 @@
 	<h1>About this app</h1>
 
 	<p>
+	Hello {object.title}<br>
+	Your Heart rate is  {object.heartrate}
+	<br>
 		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
 		following into your command line and following the prompts:
 	</p>

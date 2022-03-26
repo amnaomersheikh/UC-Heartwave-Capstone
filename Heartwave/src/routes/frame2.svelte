@@ -7,16 +7,18 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Frame 2</title>
 </svelte:head>
 
 <section>
 	<h1>
-		<div >
+		<div class="welcome">
 			<picture>
-				<img src="ucheartwave.png" alt="" />
+				<img src="ucheartwave.png" alt="Welcome" />
 			</picture>
-		</div>		to your new<br />SvelteKit app sure
+		</div>
+
+		to your new<br />frame 2
 	</h1>
 
 	<h2>
@@ -39,18 +41,5 @@
 		width: 100%;
 	}
 
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
 </style>
