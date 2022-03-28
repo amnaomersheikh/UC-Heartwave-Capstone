@@ -4,6 +4,7 @@
 
 <script>
 	import Counter from '$lib/Counter.svelte';
+	import Button from '$lib/Button.svelte';
 </script>
 
 <svelte:head>
@@ -23,7 +24,9 @@
 		try editing <strong>src/routes/index.svelte</strong>
 	</h2>
 
-	<Counter />
+
+	<Button/>
+
 </section>
 
 <style>
