@@ -3,8 +3,8 @@
 </script>
 
 <script>
-	import Counter from '$lib/Counter.svelte';
-
+	import Button from '$lib/Button.svelte';
+	let files;
 </script>
 
 <svelte:head>
@@ -22,12 +22,15 @@
 		to your new<br />frame 2
 	</h1>
 
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	
-	</h2>
+	<label>Press 'browse' and select file</label>
+	<input type="file" bind:files >
 
-
+	{#if files && files[0]}
+	<p>
+		{files[0].name}
+	</p>
+	{/if}
+	<Button/>
 </section>
 
 <style>
