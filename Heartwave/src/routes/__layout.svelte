@@ -10,7 +10,11 @@
 </main>
 
 <footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> www uc heart rate</p>
+	<p>
+		<b>Contact:</b> 
+	<br/>
+		Text abcdefg
+	</p>
 </footer>
 
 <style>

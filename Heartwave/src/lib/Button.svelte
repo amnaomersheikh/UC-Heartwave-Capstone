@@ -1,6 +1,6 @@
 
   <Button color="secondary" on:click={() => clicked++} variant="raised">
-	<Label>Raised</Label>
+	<Label>Analyse</Label>
   </Button>
   
 

@@ -4,25 +4,38 @@
 
 <script>
 	import Button from '$lib/Button.svelte';
+	import Radio from '$lib/radio.svelte';
 	let files;
 </script>
 
+
 <svelte:head>
-	<title>Frame 2</title>
+	<title>First Frame</title>
 </svelte:head>
 
+
+
 <section>
+
+	
 	<h1>
 		<div class="welcome">
 			<picture>
 				<img src="ucheartwave.png" alt="Welcome" />
 			</picture>
 		</div>
-
-		to your new<br />frame 2
+		<br/>
+	
 	</h1>
-
-	<label>Press 'browse' and select file</label>
+	<Radio/> 
+	<h2>
+		<div>
+			<b>Start by uploading an ECG file...</b>
+		</div>
+		<br/>
+		<br/>
+	</h2>
+	
 	<input type="file" bind:files >
 
 	{#if files && files[0]}
@@ -30,8 +43,27 @@
 		{files[0].name}
 	</p>
 	{/if}
+
 	<Button/>
+
+	<h2>
+		<br/>
+		<br/>
+		<br/>
+		<div>
+			<b>Instructions: </b> 
+		</div>
+		
+		<ul style="list-style-tyoe:dics">
+			<li>Select ECG data file (CSV format)</li> 
+			<li>Click 'Analyse' button</li>
+		</ul>
+		
+		<br/>
+	</h2>
+
 </section>
+
 
 <style>
 	section {
@@ -48,3 +80,5 @@
 
 
 </style>
+
+
