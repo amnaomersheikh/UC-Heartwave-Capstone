@@ -48,4 +48,8 @@
   .radio-demo > :global(*) {
     margin: 0 0.2em;
   }
+  input[type="radio"]{
+    width: 500px;
+  }
+  
 </style>
