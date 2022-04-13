@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Login</title>
 </svelte:head>
 
 <section>
